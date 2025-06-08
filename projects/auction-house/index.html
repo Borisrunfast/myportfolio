@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auction House Preview</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- HEADER -->
+  <header class="bg-gray-800 bg-opacity-75 backdrop-blur-sm fixed w-full z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-gray-100 hover:text-pink-400 transition">Borisas</a>
+      <nav class="space-x-6">
+        <a href="/" class="hover:text-pink-400 transition">Home</a>
+        <a href="/#projects" class="hover:text-pink-400 transition">Projects</a>
+        <a href="/projects/auction-house/" class="text-pink-300 hover:text-pink-400 transition">Auction House Preview</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-pink-600 to-purple-600 py-24 pt-32">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h1 class="text-5xl font-extrabold mb-4">Auction House 💰</h1>
+      <p class="text-lg text-pink-100 max-w-2xl mx-auto">
+        A real-time bidding platform built with Vite, Tailwind CSS & Vanilla JS. Register, login, and
+        bid against others to win unique listings. Complete CRUD, error handling, and responsive design.
+      </p>
+      <div class="mt-8">
+        <a href="https://semester-proj-auction-house.netlify.app" target="_blank"
+           class="px-6 py-3 bg-white text-pink-600 font-semibold rounded-lg shadow-lg hover:bg-pink-50 transition">
+          View Live Site
+        </a>
+        <a href="https://github.com/Borisrunfast/Semester-Project-2" target="_blank"
+           class="ml-4 px-6 py-3 bg-pink-500 text-white font-semibold rounded-lg shadow-lg hover:bg-pink-400 transition">
+          Source Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Core Features</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-pink-400">✔️</div>
+          <p class="text-gray-200">Real-time bidding on listings, competing with other users.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-pink-400">✔️</div>
+          <p class="text-gray-200">Full listing CRUD for registered users, with role-based permissions.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-pink-400">✔️</div>
+          <p class="text-gray-200">Authentication flow: login, register, and profile management.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-pink-400">✔️</div>
+          <p class="text-gray-200">Error handling, input validation, and responsive layout via Flex/Grid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Screenshots</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl" data-animate>
+          <img src="/auction-house-home.jpg" alt="Auction House Home" class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-1">Home Page</h3>
+            <p class="text-gray-400 text-sm">Browse active listings and place your bids in real time.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl" data-animate>
+          <img src="/auction-house-listing.jpg" alt="Auction House Listing" class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-1">Listing Detail</h3>
+            <p class="text-gray-400 text-sm">View item details, bid history, and submit your bid securely.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl" data-animate>
+          <img src="/auction-house-profile.jpg" alt="Auction House Profile" class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-1">Profile & Management</h3>
+            <p class="text-gray-400 text-sm">Manage your listings, bids, and account settings seamlessly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-6">Tech Stack & Tools</h2>
+      <ul class="flex flex-wrap justify-center gap-4 text-gray-200">
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Vite</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Tailwind CSS</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Vanilla JS</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Netlify</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Figma</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">GitHub Projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 bg-opacity-75 backdrop-blur-sm border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <p class="text-gray-400 text-sm">© <span id="year"></span> Borisas. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 flex space-x-4 text-sm">
+        <a href="https://twitter.com/boris" class="hover:text-pink-400 transition">Twitter</a>
+        <a href="https://github.com/boris-repo" class="hover:text-pink-400 transition">GitHub</a>
+        <a href="mailto:boris@example.com" class="hover:text-pink-400 transition">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Init -->
+  <script type="module">
+    import { initScrollAnimations } from '/src/util/scrollAnimation.js';
+    document.addEventListener('DOMContentLoaded', initScrollAnimations);
+  </script>
+</body>
+</html>

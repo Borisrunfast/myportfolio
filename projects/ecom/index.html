@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eCom App Preview</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- HEADER -->
+  <header class="bg-gray-800 bg-opacity-75 backdrop-blur-sm fixed w-full z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-gray-100 hover:text-indigo-400 transition">Borisas</a>
+      <nav class="space-x-6">
+        <a href="/" class="hover:text-indigo-400 transition">Home</a>
+        <a href="/#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="/projects/ecom/" class="text-indigo-300 hover:text-indigo-400 transition">eCom Preview</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 py-24 pt-32">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h1 class="text-5xl font-extrabold mb-4">eCom Store App 🛒</h1>
+      <p class="text-lg text-indigo-100 max-w-2xl mx-auto">
+        A responsive React-based online shop demo using the Noroff API. Browse products, manage your cart,
+        and checkout seamlessly with a smooth, modern UI.
+      </p>
+      <div class="mt-8">
+        <a href="https://ecom-borisrunfast.netlify.app" target="_blank"
+           class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow-lg hover:bg-indigo-50 transition">
+          View Live Site
+        </a>
+        <a href="https://github.com/Borisrunfast/eCom" target="_blank"
+           class="ml-4 px-6 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-400 transition">
+          Source Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Key Features</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-indigo-400">✔️</div>
+          <p>Real-time look-ahead product search filtering on the homepage.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-indigo-400">✔️</div>
+          <p>Dynamic React Router navigation for product pages and cart flow.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-indigo-400">✔️</div>
+          <p>Cart icon with item count, persistent via Context API.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-indigo-400">✔️</div>
+          <p>Discount calculation UI showing original and discounted prices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Screenshots</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl">
+          <img src="/eCom-home.jpg" alt="eCom Home Screenshot"
+               class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-2">Homepage & Search</h3>
+            <p class="text-gray-400 text-sm">
+              Real-time filtering and responsive grid layout showcase product catalog.
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl">
+          <img src="/eCom-cart.jpg" alt="eCom Cart Screenshot"
+               class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-2">Cart Page</h3>
+            <p class="text-gray-400 text-sm">
+              Interactive cart with item management, totals calculation, and checkout button.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-6">Tech Stack & Tools</h2>
+      <ul class="flex flex-wrap justify-center gap-6 text-gray-200">
+        <li class="px-4 py-2 bg-gray-700 rounded-full">React</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Tailwind CSS</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Context API</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Noroff API</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">React Router</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Netlify</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 bg-opacity-75 backdrop-blur-sm border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <p class="text-gray-400 text-sm">© <span id="year"></span> Borisas. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 flex space-x-4 text-sm">
+        <a href="https://twitter.com/boris" class="hover:text-indigo-400 transition">Twitter</a>
+        <a href="https://github.com/boris-repo" class="hover:text-indigo-400 transition">GitHub</a>
+        <a href="mailto:boris@example.com" class="hover:text-indigo-400 transition">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Init -->
+  <script type="module">
+    import { initScrollAnimations } from '/src/util/scrollAnimation.js';
+    document.addEventListener('DOMContentLoaded', initScrollAnimations);
+  </script>
+</body>
+</html>

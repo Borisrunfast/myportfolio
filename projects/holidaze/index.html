@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holidaze App Preview</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- HEADER -->
+  <header class="bg-gray-800 bg-opacity-75 backdrop-blur-sm fixed w-full z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-gray-100 hover:text-indigo-400 transition">Borisas</a>
+      <nav class="space-x-6">
+        <a href="/" class="hover:text-indigo-400 transition">Home</a>
+        <a href="/#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="/projects/holidaze/" class="text-indigo-300 hover:text-indigo-400 transition">Holidaze Preview</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-green-600 to-blue-600 py-24 pt-32">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h1 class="text-5xl font-extrabold mb-4">Holidaze App ✨</h1>
+      <p class="text-lg text-green-100 max-w-2xl mx-auto">
+        Responsive accommodation booking platform with full user registration, multi-role management,
+        and calendar-based availability. Built during the FED2 exam to showcase planning, design,
+        and technical skills.
+      </p>
+      <div class="mt-8">
+        <a href="https://holidaze-borisas.netlify.app" target="_blank"
+           class="px-6 py-3 bg-white text-green-600 font-semibold rounded-lg shadow-lg hover:bg-green-50 transition">
+          View Live Site
+        </a>
+        <a href="https://github.com/Borisrunfast/FED2-PE2" target="_blank"
+           class="ml-4 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-400 transition">
+          Source Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Key Features & User Stories</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-green-400">✔️</div>
+          <p class="text-gray-200">Visitor: browse and search venues, view availability calendar with booked dates highlighted.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-green-400">✔️</div>
+          <p class="text-gray-200">Customer: register/login, create and manage bookings, update profile avatar.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-green-400">✔️</div>
+          <p class="text-gray-200">Venue Manager: register/login, create/edit/delete venues, view bookings, update avatar.</p>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="mt-1 text-green-400">✔️</div>
+          <p class="text-gray-200">Admin capabilities with role-based permissions and calendar integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Screenshots</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl" data-animate>
+          <img src="/holidaze-home.jpg" alt="Holidaze Home View" class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-1">Home View</h3>
+            <p class="text-gray-400 text-sm">Discover venues at a glance with search and featured listings.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl" data-animate>
+          <img src="/holidaze-profile.jpg" alt="Holidaze Profile Page" class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-1">Profile & Bookings</h3>
+            <p class="text-gray-400 text-sm">Manage your bookings and update personal details with ease.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl md:col-span-2" data-animate>
+          <img src="/holidaze-venue.jpg" alt="Holidaze Venue Detail" class="w-full object-cover" />
+          <div class="p-4 bg-gray-900">
+            <h3 class="text-xl font-semibold mb-1">Venue Detail & Booking</h3>
+            <p class="text-gray-400 text-sm">View venue details, calendar availability, and secure your stay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-6">Tech Stack & Tools</h2>
+      <ul class="flex flex-wrap justify-center gap-4 text-gray-200">
+        <li class="px-4 py-2 bg-gray-700 rounded-full">React</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Tailwind CSS</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">React Router</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Netlify</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">Figma</li>
+        <li class="px-4 py-2 bg-gray-700 rounded-full">GitHub Projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 bg-opacity-75 backdrop-blur-sm border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <p class="text-gray-400 text-sm">© <span id="year"></span> Borisas. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 flex space-x-4 text-sm">
+        <a href="https://twitter.com/boris" class="hover:text-indigo-400 transition">Twitter</a>
+        <a href="https://github.com/boris-repo" class="hover:text-indigo-400 transition">GitHub</a>
+        <a href="mailto:boris@example.com" class="hover:text-indigo-400 transition">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Init -->
+  <script type="module">
+    import { initScrollAnimations } from '/src/util/scrollAnimation.js';
+    document.addEventListener('DOMContentLoaded', initScrollAnimations);
+  </script>
+</body>
+</html>
