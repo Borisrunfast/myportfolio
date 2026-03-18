@@ -1,0 +1,128 @@
+.project-hero {
+  padding: 120px 0 70px;
+}
+
+.project-hero__inner {
+  text-align: center;
+}
+
+.project-hero__title {
+  margin: 0 0 10px;
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.project-hero__lead {
+  margin: 0 auto;
+  max-width: 70ch;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 18px;
+}
+
+.project-hero__actions {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-grid {
+  display: grid;
+  gap: 22px;
+}
+
+@media (min-width: 860px) {
+  .project-grid.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-grid.cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.shot {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+}
+
+.shot__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.shot__body {
+  padding: 14px 16px 16px;
+  background: #0b1220;
+}
+
+.shot__title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.shot__text {
+  margin: 0;
+  color: var(--dim);
+  font-size: 14px;
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pill {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.feature-list {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 860px) {
+  .feature-list.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 12px;
+  align-items: start;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.feature__icon {
+  margin-top: 2px;
+}
+
+.project-hero--ecom {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.project-hero--auction {
+  background: linear-gradient(90deg, #db2777, #7c3aed);
+}
+
+.project-hero--holidaze {
+  background: linear-gradient(90deg, #16a34a, #2563eb);
+}

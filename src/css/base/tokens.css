@@ -1,0 +1,28 @@
+:root {
+  --bg: #111827;
+  --surface: #1f2937;
+  --surface-2: #111827;
+  --text: #f3f4f6;
+  --muted: #d1d5db;
+  --dim: #9ca3af;
+  --border: rgba(255, 255, 255, 0.12);
+
+  --brand: #10b981;
+  --primary: #4f46e5;
+  --primary-2: #8b5cf6;
+
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --container: 1120px;
+  --pad: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}

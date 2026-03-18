@@ -1,0 +1,49 @@
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 30;
+}
+
+.sticky-header {
+  background: rgba(31, 41, 55, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky-header.scrolled {
+  border-bottom-color: rgba(147, 51, 234, 0.6);
+  box-shadow: 0 4px 20px rgba(147, 51, 234, 0.2);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 18px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  transition: color 150ms ease;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.88);
+  transition: color 150ms ease;
+}
+
+.nav-link:hover {
+  color: #a5b4fc;
+}

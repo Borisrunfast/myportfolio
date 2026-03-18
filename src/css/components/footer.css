@@ -1,0 +1,38 @@
+.site-footer {
+  background: rgba(31, 41, 55, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-inner {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 150ms ease;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: #a5b4fc;
+}
+
+@media (min-width: 768px) {
+  .footer-inner {
+    flex-direction: row;
+  }
+}

@@ -1,70 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Borisas Guzitajevs</title>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/src/css/main.css" />
 </head>
-<body class="bg-gray-900 text-gray-100">
+<body class="site">
 
   <!-- HEADER -->
-  <header class="bg-gray-800 bg-opacity-75 backdrop-blur-sm fixed w-full z-30">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#" class="text-2xl font-bold hover:text-indigo-400 transition">Borisas</a>
-      <nav class="space-x-6">
-        <a href="#hero" class="hover:text-indigo-400 transition">Home</a>
-        <a href="#about" class="hover:text-indigo-400 transition">About</a>
-        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
-        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+  <header id="main-header" class="site-header sticky-header">
+    <div class="container header-inner">
+      <a href="#hero" id="logo-name" class="brand">Borisas</a>
+      <nav class="nav">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section id="hero" class="bg-gradient-to-r from-indigo-600 to-purple-600 h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-    <h1 class="text-6xl font-extrabold text-white mb-4">Welcome to My Galaxy</h1>
-    <p class="text-xl text-indigo-200 max-w-2xl mb-8">
-      I’m Boris, a front-end developer crafting cosmic-inspired web experiences using modern JavaScript and Tailwind CSS.
-    </p>
-    <div class="space-x-4">
-      <a href="#projects" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-indigo-50 transition">
-        View Projects
-      </a>
-      <button id="enter-game-btn" class="px-6 py-3 bg-green-400 text-white font-semibold rounded-lg shadow hover:bg-green-300 transition">
-        Play Game Demo
-      </button>
+  <section id="hero" class="hero hero-cyber">
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid" aria-hidden="true"></div>
+    
+    <!-- Dark Radial Gradient Overlay -->
+    <div class="hero-overlay bg-gradient-radial" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-grid">
+        <!-- LEFT: Decorative waving hand -->
+        <div class="hero-media">
+          <img
+            src="/waving-hand.svg"
+            alt=""
+            aria-hidden="true"
+            class="hero-hand hero-hand--neon wave"
+            draggable="false"
+          />
+        </div>
+
+        <!-- RIGHT: Text -->
+        <div class="hero-copy">
+          <span class="terminal-badge">Front-End Developer</span>
+          <h1 class="hero-title">Welcome to My Page</h1>
+          <p class="hero-lead">
+            I'm Boris, a front-end developer crafting Beer-inspired web experiences using modern JavaScript.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-view-projects">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="py-16 bg-gray-800">
-    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
-      <img src="/me-photo.jpg" alt="Boris Portrait" class="w-48 h-48 rounded-full border-4 border-indigo-600 mx-auto md:mx-0 shadow-lg" />
-      <div>
-        <h2 class="text-4xl font-bold text-white mb-4">About Me</h2>
-        <div class="space-y-4">
-        <p class="text-gray-300">
+  <section id="about" class="section section-surface">
+    <div class="container about">
+      <img src="/me-photo.jpg" alt="Boris Portrait" class="avatar" />
+      <div class="about-copy">
+        <h2 class="section-title">About Me</h2>
+        <div class="stack">
+        <p class="muted">
           Hi, I’m <strong>Boris Jonas Guzitajevas</strong>, a tech enthusiast from a small town near Hokksund, Norway. While I’ve worked in construction due to family roots, my true passion lies in technology and problem-solving.
         </p>
-        <p class="text-gray-300">
+        <p class="muted">
           I’ve built robot cars and developed mini-games using various programming languages. I enjoy both the creative and technical sides of tech, always looking for ways to blend logic with imagination.
         </p>
-        <p class="text-gray-300">
+        <p class="muted">
           Outside of coding, I love playing games like <em>Deadlock</em> and <em>Overwatch</em>. If I’m away from the screen, I clear my head with long walks through the forest.
         </p>
-        <p class="text-gray-300">
+        <p class="muted">
           I’m now working on transitioning fully into the tech world and bringing my hands-on mindset and curiosity to new challenges.
         </p>
       </div>
 
-        <h3 class="text-2xl font-semibold text-white mb-3">Skills</h3>
-        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-300">
+        <h3 class="subheading">Skills</h3>
+        <ul class="skills">
           <li>HTML & CSS</li>
           <li>JavaScript (ES6+)</li>
           <li>React</li>
-          <li>Tailwind</li>
+          <li>CSS Architecture</li>
           <li>Canvas & SVG</li>
           <li>Git & CI/CD</li>
         </ul>
@@ -73,41 +93,41 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="py-16">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-white mb-12">Projects</h2>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title section-title--center">Projects</h2>
+      <div class="cards">
 
         <!-- Holidaze -->
-        <a href="/projects/holidaze/" class="group block bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <div class="overflow-hidden">
-            <img src="/holidaze-home.jpg" alt="Holidaze Home" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" />
+        <a href="/projects/holidaze/" class="card neon-snake-card">
+          <div class="card-media">
+            <img src="/holidaze-home.jpg" alt="Holidaze Home" class="card-img" />
           </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-white mb-2">Holidaze App ✨</h3>
-            <p class="text-gray-400">Booking platform with multi-role CRUD, calendar, and auth flows.</p>
+          <div class="card-body">
+            <h3 class="card-title">Holidaze App ✨</h3>
+            <p class="card-text">Booking platform with multi-role CRUD, calendar, and auth flows.</p>
           </div>
         </a>
 
         <!-- Auction House -->
-        <a href="/projects/auction-house/" class="group block bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <div class="overflow-hidden">
-            <img src="/auction-house-home.jpg" alt="Auction House Home" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" />
+        <a href="/projects/auction-house/" class="card neon-snake-card">
+          <div class="card-media">
+            <img src="/auction-house-home.jpg" alt="Auction House Home" class="card-img" />
           </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-white mb-2">Auction House 💰</h3>
-            <p class="text-gray-400">Real-time bidding platform with CRUD, auth, and error handling.</p>
+          <div class="card-body">
+            <h3 class="card-title">Auction House 💰</h3>
+            <p class="card-text">Real-time bidding platform with CRUD, auth, and error handling.</p>
           </div>
         </a>
 
         <!-- eCom -->
-        <a href="/projects/ecom/" class="group block bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-          <div class="overflow-hidden">
-            <img src="/eCom-home.jpg" alt="eCom Home" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" />
+        <a href="/projects/ecom/" class="card neon-snake-card">
+          <div class="card-media">
+            <img src="/eCom-home.jpg" alt="eCom Home" class="card-img" />
           </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-white mb-2">eCom App 🛒</h3>
-            <p class="text-gray-400">Online shop with live search, cart, and checkout flows.</p>
+          <div class="card-body">
+            <h3 class="card-title">eCom App 🛒</h3>
+            <p class="card-text">Online shop with live search, cart, and checkout flows.</p>
           </div>
         </a>
 
@@ -116,40 +136,40 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="py-16 bg-gray-800">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-white mb-8">Contact Me</h2>
-      <form class="space-y-6 bg-gray-900 p-6 rounded-2xl shadow-lg">
-        <div>
-          <label for="name" class="block text-gray-300 mb-2">Name</label>
-          <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-indigo-500" />
+  <section id="contact" class="section section-surface">
+    <div class="container">
+      <h2 class="section-title section-title--center">Contact Me</h2>
+      <form class="form">
+        <div class="field">
+          <label for="name" class="label">Name</label>
+          <input type="text" id="name" placeholder="Your Name" class="input" />
         </div>
-        <div>
-          <label for="email" class="block text-gray-300 mb-2">Email</label>
-          <input type="email" id="email" placeholder="you@example.com" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-indigo-500" />
+        <div class="field">
+          <label for="email" class="label">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" class="input" />
         </div>
-        <div>
-          <label for="message" class="block text-gray-300 mb-2">Message</label>
-          <textarea id="message" rows="5" placeholder="Tell me about your project…" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-indigo-500"></textarea>
+        <div class="field">
+          <label for="message" class="label">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project…" class="input textarea"></textarea>
         </div>
-        <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 transition">Send Message</button>
+        <button type="submit" class="btn btn-solid btn-block">Send Message</button>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-800 bg-opacity-75 backdrop-blur-sm border-t border-gray-700">
-    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
-      <p class="text-gray-400 text-sm">© <span id="year"></span> Borisas. All rights reserved.</p>
-      <div class="mt-4 md:mt-0 flex space-x-4 text-sm">
-        <a href="https://twitter.com/boris" class="hover:text-indigo-400 transition">Twitter</a>
-        <a href="https://github.com/boris-repo" class="hover:text-indigo-400 transition">GitHub</a>
-        <a href="mailto:boris@example.com" class="hover:text-indigo-400 transition">Email</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="fineprint">© <span id="year"></span> Borisas. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://twitter.com/boris" class="footer-link">Twitter</a>
+        <a href="https://github.com/boris-repo" class="footer-link">GitHub</a>
+        <a href="mailto:boris@example.com" class="footer-link">Email</a>
       </div>
     </div>
   </footer>
 
   <!-- Main JS -->
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
